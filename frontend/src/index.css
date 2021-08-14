@@ -1,0 +1,249 @@
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e9ecef;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+li {
+  list-style-type: none;
+}
+
+.movie-info .title {
+  margin-bottom: 10px;
+}
+
+.sub-info {
+  margin-bottom: 2px;
+}
+
+.sub-info span {
+  display: inline-block;
+  margin-right: 2px;
+  font-weight: bold;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .title {
+  padding: 1rem 0;
+}
+
+header .login-btn {
+  font-size: 1rem;
+  border: none;
+  background-color: #4c6ef5;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+header .register-btn {
+  font-size: 1rem;
+  border: none;
+  background-color: #4c6ef5;
+  color: #fff;
+  border-radius: 4px;
+}
+
+:is(header) button a {
+  display: inline-block;
+  padding: 10px 16px;
+}
+
+header .username {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* movie */
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.movie-wrapper {
+  display: flex;
+  width: 45%;
+  margin-bottom: 2rem;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.movie-wrapper .title:hover {
+  text-decoration: underline;
+}
+
+.movie-wrapper img {
+  margin-right: 1rem;
+}
+
+/* movie-detail */
+.movie-detail-section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  margin-top: 3rem;
+}
+
+.movie-detail {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-detail .movie-info .title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.movie-detail .sub-info {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.movie-detail .sub-info span {
+  font-weight: bold;
+}
+
+.movie-detail img {
+  width: 300px;
+}
+
+.movie-detail-section input,
+.movie-detail-section button {
+  font-size: 1rem;
+  height: 30px;
+  padding: 0 8px;
+}
+
+.movie-detail-section form {
+  margin-bottom: 1rem;
+}
+
+.comment-length {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.comment-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.comment-list .comment-top {
+  margin-bottom: 6px;
+}
+
+.comment-list .username {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.comment-list .comment-text {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.comment-list button {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.comment-list button.edit {
+  background-color: #40c057;
+}
+.comment-list button.delete {
+  background-color: #fa5252;
+}
+.comment-list button.cancel {
+  background-color: #868e96;
+}
+.comment-list button.submit {
+  background-color: #4c6ef5;
+}
+
+/* auth-form */
+.authform-container {
+  width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.authform-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.authform-container label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.authform-container input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 8px;
+  height: 45px;
+  font-size: 1rem;
+  border: 1px solid #adb5bd;
+}
+
+.authform-container button {
+  height: 45px;
+  width: 100%;
+  padding: 10px;
+  background-color: #4c6ef5;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.password-error {
+  color: red;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
